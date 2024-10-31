@@ -1,27 +1,3 @@
-<table border="1" width=50% align="center">
-    <caption><font color="red"sizer=14>Informação</font></caption>
-    <td colspan="3"><font size="4"></font></td> 
-   <tr>
-        <th>R.A.</th><th>NOME</th><th>Endereço</th>
-       
-    </tr>
-
-    <tr>
-         <td>12</td><td>JOÃO VITOR</td><td>RUA LA B 12</td>
-
-
-    </tr>
-            <td>Marcela</td><td>Adidas</td><td>14</td>
-
-     <tr>
-    
-            <td>Marcela</td><td>Adidas</td><td>14</td>
-  
-
-
-     </tr>
-
-    </table>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,46 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>criando meu primeiro formulario</h1>
-    <form>
-        <font size = "5" face = "arial">Nome: <input type = "text" name ="nome" size ="100"><br><br> 
-        endereço:<input type="text" name = "endereço" size="56"><br><br>
-        cidade: <input type="text" name ="cidade"> CEP: <input type="text" name ="CEP"><br><br>
-        telefone: <input type="text" name="telefone"> e-mail: <input type="email" value = "@"><br><br>
-        Senha: <input type ="password" size="8" name="senha" ><br><br>
+     <h1>soma numeros</h1>
+     <p id = "resultado"></p>
+    <script>
+               var numl = parseFloat(prompt("digite o numero 01"));
+        var num2 = parseFloat(prompt("digite o numero 02"));
+        var confirma = confirm("deseja realizar a soma de " +numl+ "+" +num2+ ":" );
+
+        if(confirma){
+
+        var soma = numl + num2;
+        document.getElementById("resultado").innertext = "A Soma é:" +soma;
+
+        }
         
-           ecolaridade:
-                  <select name="escolaridade" >
+        else{ 
+            document.getElementById("resultado").innertext = "calculo não realizado";
 
-                     <option>fundamental</option>
-                     <option>ensino medio</option>
-                     <option>ensino superior</option>
-                  </select><br><br>
-                  <textarea rows="10" cois="50" maxlength="140">escreva um comentario sobre nossa pagina>
+    }
 
-
-
-
-
-                  </textarea>
-          <br><br>
-        <b>sexo: </b>
-        <input type="checkbox" name="fen" > feminino
-        <input type="checkbox" name="msc" > masculino<br><br>
-        <b>deseja receber notificações por e-mail?<b>
-        sim <input type="radio" name ="email">
-        não <input type="radio" name ="email">
-
-
-
-        </font><br><br>
-
-        <input type="button" value="cadastrar">
-        <input type="button" value="limpar" >
-
-
-        
-        
-
-
-    </form>
+     </script>
+    
+</body>
+</html>
